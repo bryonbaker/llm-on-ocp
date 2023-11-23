@@ -112,7 +112,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/odh-labs/llm-on-ocp.git
-        revision: main
+        revision: local-customisations
         directories:
           - path: gitops*
   template:
@@ -122,7 +122,7 @@ spec:
       project: "default"
       source:
         repoURL: https://github.com/odh-labs/llm-on-ocp.git
-        targetRevision: main
+        targetRevision: local-customisations
         path: '{{.path.path}}'
       destination:
         server: https://kubernetes.default.svc
