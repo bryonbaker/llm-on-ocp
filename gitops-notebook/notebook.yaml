@@ -67,13 +67,6 @@ spec:
           periodSeconds: 5
           successThreshold: 1
           timeoutSeconds: 1
-        resources:
-#          limits:
-#            cpu: "2"
-#            memory: 8Gi
-#          requests:
-#            cpu: "1"
-#            memory: 8Gi
         volumeMounts:
         - mountPath: /opt/app-root/src
           name: jupyterhub-nb-admin-pvc
